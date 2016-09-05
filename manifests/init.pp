@@ -1,7 +1,8 @@
 # Default strongSwan class.
 class strongswan(
-  $package_name = $strongswan::params::package,
-  $service_name = $strongswan::params::service,
+  $package_name   = $strongswan::params::package,
+  $service_name   = $strongswan::params::service,
+  $service_ensure = $strongswan::params::service,
 ) inherits strongswan::params {
   package { $package_name:
     ensure => installed,
@@ -60,4 +61,3 @@ class strongswan(
     order   => '01',
   }
 }
-

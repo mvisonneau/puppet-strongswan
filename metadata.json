@@ -1,0 +1,44 @@
+{
+  "name": "mvisonneau-strongswan",
+  "version": "1.0.0",
+  "author": "Maxime VISONNEAU",
+  "summary": "Manage StrongSwan VPN / Forked from jpds/puppet-strongswan",
+  "license": "Apache-2.0",
+  "source": "https://github.com/mvisonneau/puppet-strongswan",
+  "project_page": "https://github.com/mvisonneau/puppet-strongswan",
+  "issues_url": "https://github.com/mvisonneau/puppet-strongswan/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=3.2.0 <5.0.0"
+    },
+    {
+      "name": "puppetlabs/concat",
+      "version_requirement": ">=2.0.0 <3.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14.04",
+        "16.04",
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ]
+}

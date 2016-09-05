@@ -1,8 +1,7 @@
 # strongSwan setup configuration.
 class strongswan::setup(
-  $options = {},
+  Hash $options = {},
 ) inherits strongswan::params {
-  validate_hash($options)
 
   concat::fragment { 'ipsec_conf_setup':
     ensure  => present,
